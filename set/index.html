@@ -1,0 +1,141 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2020 Targets | Sngur </title>
+  <meta name="description" content="Write down your goals for the year 2020">
+  <meta name="author" content="Sngur Shillong">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="icon" type="image/png" href="https://sngur.github.io/Hospital-List/dist/images/favicon.png">   
+</head>
+<body>
+<div class="row box">	
+<div class="col-md-12">
+	<div class="text-center heading">
+	<br/>
+	<object type="image/svg+xml" data="../images/rocket.svg">
+	  Your browser does not support SVG
+	</object>
+	<br/>
+	<h3>Welcome to 2020 Targets</h3>
+	<p>
+		Set Targets, Write them down, Work them out and Track them here.
+	</p>	
+	</div>
+	
+	<div class="row d-flex justify-content-center" style="margin-left: 0px;margin-top: 60px;">
+	    <div class="col-md-12">
+	        <div class="card-hover-shadow-2x mb-3 card">
+	        	<form action="save.php" method="POST">
+	            <div class="card-header-tab card-header">
+	                <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp; <b>Enter Your Name, email and Targets</b></div>
+	            </div>
+	            <div class="scroll-area-sm">
+	                <perfect-scrollbar class="ps-show-limits">
+	                    <div style="position: static;" class="ps ps--active-y">
+	                        <div class="ps-content">
+	                            <ul class=" list-group list-group-flush">
+	                                 <li class="list-group-item">
+	                                    <div class="todo-indicator bg-success"></div>
+	                                    <div class="widget-content p-0">
+	                                    	 <div class="widget-content-left mr-2">	                                    	 	
+	                                    	 	<input type="text" name="name" class="form-control" placeholder="Enter Your Name*" required />
+	                                    	 </div>
+	                                    </div>
+	                                 </li>
+									 <li class="list-group-item">
+	                                    <div class="todo-indicator bg-success"></div>
+	                                    <div class="widget-content p-0">
+	                                    	 <div class="widget-content-left mr-2">	                                    	 	
+	                                    	 	<input type="text" name="email" class="form-control" placeholder="Enter Your Email Address*" required  />
+	                                    	 </div>
+	                                    </div>
+	                                 </li>
+	                                 <li class="list-group-item">
+	                                    <div class="todo-indicator bg-success"></div>
+	                                    <div class="widget-content p-0">
+	                                    	 <div class="widget-content-left mr-2">	                                    	 	
+	                                    	 	<input type="text" name="target1" class="form-control" placeholder="Enter Your First Target*" required />
+	                                    	 	Category
+	                                    	 	<select name="category1" class="form-control">
+	                                    	 		<option value="Goal" >Goal</option>	                                    	 
+	                                    	 		<option value="Personal" >Personal</option>		
+	                                    	 		<option value="Skill Development">Skill Development</option>
+	                                    	 		<option value="Social" >Social</option>
+	                                    	 		<option value="Technical">Technical</option>
+	                                    	 		<option value="Others" >Others</option>
+	                                    	 	</select>
+	                                    	 </div>
+	                                    </div>
+	                                 </li>
+	                                 <li class="list-group-item">
+	                                    <div class="todo-indicator bg-success"></div>
+	                                    <div class="widget-content p-0">
+	                                    	 <div class="widget-content-left mr-2">	                                    	 	
+	                                    	 	<input type="text" name="target2" class="form-control" placeholder="Enter Your Second Target" />
+	                                    	 	Category
+	                                    	 	<select name="category2" class="form-control">
+	                                    	 		<option value="Goal" >Goal</option>	                                    	 
+	                                    	 		<option value="Personal" >Personal</option>		
+	                                    	 		<option value="Skill Development">Skill Development</option>
+	                                    	 		<option value="Social" >Social</option>
+	                                    	 		<option value="Technical">Technical</option>
+	                                    	 		<option value="Others" >Others</option>
+	                                    	 	</select>
+	                                    	 </div>
+	                                    </div>
+	                                 </li>
+									<li class="list-group-item">
+	                                    <div class="todo-indicator bg-success"></div>
+	                                    <div class="widget-content p-0">
+	                                    	 <div class="widget-content-left mr-2">	                                    	 	
+	                                    	 	<input type="text" name="target3" class="form-control" placeholder="Enter Your Third Target" />
+	                                    	 	Category
+	                                    	 	<select name="category3" class="form-control">
+	                                    	 		<option value="Goal" >Goal</option>	                                    	 
+	                                    	 		<option value="Personal" >Personal</option>		
+	                                    	 		<option value="Skill Development">Skill Development</option>
+	                                    	 		<option value="Social" >Social</option>
+	                                    	 		<option value="Technical">Technical</option>
+	                                    	 		<option value="Others" >Others</option>
+	                                    	 	</select>
+	                                    	 </div>
+	                                    </div>
+	                                 </li>
+									<li class="list-group-item">
+	                                    <div class="todo-indicator bg-success"></div>
+	                                    <div class="widget-content p-0">
+	                                    	 <div class="widget-content-left mr-2">	                                    	 	
+	                                    	 	<input type="text" name="target4" class="form-control" placeholder="Enter Your Forth Target" />
+	                                    	 	Category
+	                                    	 	<select name="category4" class="form-control">
+	                                    	 		<option value="Goal" >Goal</option>	                                    	 
+	                                    	 		<option value="Personal" >Personal</option>		
+	                                    	 		<option value="Skill Development">Skill Development</option>
+	                                    	 		<option value="Social" >Social</option>
+	                                    	 		<option value="Technical">Technical</option>
+	                                    	 		<option value="Others" >Others</option>
+	                                    	 	</select>
+	                                    	 </div>
+	                                    </div>
+	                                 </li>
+	                                </ul>
+	                        </div>
+	                    </div>
+	                </perfect-scrollbar>
+	            </div>
+	            <div class="d-block text-center card-footer">	            	
+	            	<input type="submit" value="Save My Targets" class="btn btn-primary" />
+	            </div>
+	        </form>
+	        </div>
+	    </div>
+	</div>
+</div>
+</div>
+<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</body>
+</html>
