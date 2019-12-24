@@ -41,13 +41,13 @@
 	                                    <div class="widget-content p-0">
 	                                        <div class="widget-content-wrapper">
 	                                            <div class="widget-content-left mr-2">
-	                                                <div class="custom-checkbox custom-control"> <input class="custom-control-input" id="exampleCustomCheckbox12" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox12">&nbsp;</label> </div>
+	                                                <div class="custom-checkbox custom-control"> <input class="custom-control-input" id="checkBox1" type="checkbox"><label class="custom-control-label" for="checkBox1">&nbsp;</label> </div>
 	                                            </div>
 	                                            <div class="widget-content-left">
 	                                                <div class="widget-heading">Participate in the #2020DevChallenge<div class="badge badge-success ml-2">Technical</div>
 	                                                </div>	                                               
 	                                            </div>
-	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"></button> </div>
+	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success" id="check1" onclick="checkItem(this.id)"> <i class="fa fa-check"></i></button> </div>
 	                                        </div>
 	                                    </div>
 	                                </li>
@@ -56,13 +56,13 @@
 	                                    <div class="widget-content p-0">
 	                                        <div class="widget-content-wrapper">
 	                                            <div class="widget-content-left mr-2">
-	                                                <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox1" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox1">&nbsp;</label></div>
+	                                                <div class="custom-checkbox custom-control"><input class="custom-control-input" id="checkBox2" type="checkbox"><label class="custom-control-label" for="checkBox2">&nbsp;</label></div>
 	                                            </div>
 	                                            <div class="widget-content-left">
 	                                                <div class="widget-heading">Be a Certified Google Android Developer<div class="badge badge-success ml-2">Technical</div>
 	                                                </div>	                                                
 	                                            </div>
-	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger">  </button> </div>
+	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success" id="check2" onclick="checkItem(this.id)"> <i class="fa fa-check"></i></button> </div>
 	                                        </div>
 	                                    </div>
 	                                </li>
@@ -71,13 +71,13 @@
 	                                    <div class="widget-content p-0">
 	                                        <div class="widget-content-wrapper">
 	                                            <div class="widget-content-left mr-2">
-	                                                <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox4">&nbsp;</label></div>
+	                                                <div class="custom-checkbox custom-control"><input class="custom-control-input" id="checkBox3" type="checkbox"><label class="custom-control-label" for="checkBox3">&nbsp;</label></div>
 	                                            </div>
 	                                            <div class="widget-content-left flex2">
 	                                                <div class="widget-heading">Publish Two (2) Posts per week</div>
 	                                                <div class="badge badge-primary ml-2">Social</div>
 	                                            </div>
-	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger">  </button> </div>
+	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success" id="check3" onclick="checkItem(this.id)"><i class="fa fa-check"></i></button></div>
 	                                        </div>
 	                                    </div>
 	                                </li>	                                
@@ -86,13 +86,13 @@
 	                                    <div class="widget-content p-0">
 	                                        <div class="widget-content-wrapper">
 	                                            <div class="widget-content-left mr-2">
-	                                                <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
+	                                                <div class="custom-checkbox custom-control"><input class="custom-control-input" id="checkBox4" type="checkbox"><label class="custom-control-label" for="checkBox4">&nbsp;</label></div>
 	                                            </div>
 	                                            <div class="widget-content-left flex2">
 	                                                <div class="widget-heading">Write Four (4) Books</div>
 	                                                <div class="widget-subheading" class="">Personal</div>
 	                                            </div>
-	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger">  </button> </div>
+	                                            <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success" id="check4" onclick="checkItem(this.id)" > <i class="fa fa-check"></i></button></div>
 	                                        </div>
 	                                    </div>
 	                                </li>
@@ -107,7 +107,49 @@
 	</div>
 </div>
 </div>
+<div class="row">
+	<div class="col-md-12 text-center heading">
+		Brought to you by Sngur Shillong, 2018-2020
+	</div>
+</div>
 <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type="text/javascript">	
+	function checkItem(clicked_id) {
+		var var_id=clicked_id;
+  		switch(var_id)
+  		{
+  			case "check1":  				
+  				if(document.getElementById("checkBox1").checked == false)
+  				{
+  					document.getElementById("checkBox1").checked = true;  					
+  				}
+  				else
+  					document.getElementById("checkBox1").checked = false;  				
+	  			break;	
+	  		case "check2":  				
+  				if(document.getElementById("checkBox2").checked == false)
+  					document.getElementById("checkBox2").checked = true;
+  				else
+  					document.getElementById("checkBox2").checked = false;
+	  			break;	
+	  		case "check3":
+  				if(document.getElementById("checkBox3").checked == false)
+  					document.getElementById("checkBox3").checked = true;
+  				else
+  					document.getElementById("checkBox3").checked = false;
+	  			break;	
+	    	case "check4":
+  				if(document.getElementById("checkBox4").checked == false)
+  					document.getElementById("checkBox4").checked = true;
+  				else
+  					document.getElementById("checkBox4").checked = false;
+	  			break;		
+	  		default:
+  				alert("no check");
+	  			break;			
+  		}
+	}
+</script>
 </body>
 </html>
