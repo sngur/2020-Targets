@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="icon" type="image/png" href="https://sngur.github.io/Hospital-List/dist/images/favicon.png">   
+  <link rel="icon" type="image/png" href="images/rocket.svg">   
 </head>
 <body>
 <div class="row box">	
@@ -26,7 +26,8 @@
 	</div>
 	
 	<div class="row d-flex justify-content-center" style="margin-left: 0px;margin-top: 60px;">
-	    <div class="col-md-12">
+		<div class="col-md-4"></div>
+	    <div class="col-md-4">
 	        <div class="card-hover-shadow-2x mb-3 card">
 	            <div class="card-header-tab card-header">
 	                <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp; Check out&nbsp; <b> Peace's </b>  &nbsp;2020 Targets</div>
@@ -98,19 +99,50 @@
 	                </perfect-scrollbar>
 	            </div>
 	            <div class="d-block text-center card-footer">
-	            	<a href="edit/?id='name'"><button class="mr-2 btn btn-link btn-sm" >Edit</button></a>
-	            	<a href="set/?id='name'"><button class="btn btn-primary" >Set My Targets</button></a></div>
+	            	
+	            	<!--<a href="edit/?id='name'"><button class="mr-2 btn btn-link btn-sm" >Edit</button></a>
+	            	<a href="set/?id='name'"><button class="btn btn-primary" >Set My Targets</button></a>-->
+	            	
+	            	<!--Share-->
+	            	Share My Tagets With Friends:<br/>            	
+	            	<div class="mobile">
+	            	<br/>	
+	            	<a href="whatsapp://send?text=Check out my Targets for 2020: http://sngur.com/2020/?name='peace' Set Your's Today" data-action="share/whatsapp/share" class="card-link" style="display: inline-block; color:#444; text-decoration: none;">
+                  	<div class="text-center" style="display: block;"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+                  	<div class="text-center" style="display: block;">Whatsapp</div>                                    	
+               	 	</a><br/>
+               	 	</div>
+               	 	<br/>Sharing link: <br/>
+               	 	<div id="link">
+               	 	<a href="http://sngur.com/2020/?name='abvpos'">http://sngur.com/2020/?name='abvpos'</a>
+               	 	</div>
+               	 	<br/>
+               	 	<button class="btn" onclick="copyDivToClipboard()">Copy Link</button>
+            		</div>
+	            
 	        </div>
 	    </div>
+	    <div class="col-md-4"></div>
 	</div>
 </div>
 </div>
 <div class="row">
 	<div class="col-md-12 text-center heading">
-		Brought to you by Sngur Shillong, 2018-2020
+		Brought to you by Sngur Shillong, 2019-2020
 	</div>
 </div>
 <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script>
+                function copyDivToClipboard() {
+                    var range = document.createRange();
+                    range.selectNode(document.getElementById("link"));
+                    window.getSelection().removeAllRanges(); // clear current selection
+                    window.getSelection().addRange(range); // to select text
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges();// to deselect
+                    alert("Link Copied");
+                }
+            </script>
 </body>
 </html>

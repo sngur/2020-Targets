@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/custom.css">
-  <link rel="icon" type="image/png" href="https://sngur.github.io/Hospital-List/dist/images/favicon.png">   
+  <link rel="icon" type="image/png" href="../images/rocket.svg">   
 </head>
 <body>
 <div class="row box">	
@@ -21,13 +21,15 @@
 	<br/>
 	<h3>Edit Your 2020 Targets</h3>
 	<p>
-		Mark Your Targets as completed.
+		Mark your completed targets and save them.
 	</p>	
 	</div>
 	
 	<div class="row d-flex justify-content-center" style="margin-left: 0px;margin-top: 60px;">
-	    <div class="col-md-12">
+		<div class="col-md-4"></div>
+	    <div class="col-md-4">
 	        <div class="card-hover-shadow-2x mb-3 card">
+	        	<form action="save.php" method="POST">
 	            <div class="card-header-tab card-header">
 	                <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp; Your 2020 Targets</div>
 	            </div>
@@ -102,14 +104,16 @@
 	                </perfect-scrollbar>
 	            </div>
 	            <div class="d-block text-center card-footer"><button class="btn btn-primary">Save My Targets</button></div>
+	        </form>
 	        </div>
 	    </div>
+	    <div class="col-md-4"></div>
 	</div>
 </div>
 </div>
 <div class="row">
 	<div class="col-md-12 text-center heading">
-		Brought to you by Sngur Shillong, 2018-2020
+		Brought to you by Sngur Shillong, 2019-2020
 	</div>
 </div>
 <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
