@@ -42,7 +42,7 @@
 	                                    <div class="todo-indicator bg-success"></div>
 	                                    <div class="widget-content p-0">
 	                                    	 <div class="widget-content-left mr-2">	                                    	 	
-	                                    	 	<input type="text" name="name" class="form-control" placeholder="Enter Your Name*" required />
+	                                    	 	<input type="text" name="name" class="form-control" placeholder="Enter Your Name*" required maxlength="20" />
 	                                    	 </div>
 	                                    </div>
 	                                 </li>
@@ -50,15 +50,16 @@
 	                                    <div class="todo-indicator bg-success"></div>
 	                                    <div class="widget-content p-0">
 	                                    	 <div class="widget-content-left mr-2">	                                    	 	
-	                                    	 	<input type="text" name="email" class="form-control" placeholder="Enter Your Email Address*" required  />
+	                                    	 	<input type="text" name="email" class="form-control" placeholder="Enter Your Email Address*" required maxlength="120"/>
 	                                    	 </div>
 	                                    </div>
 	                                 </li>
 	                                 <li class="list-group-item">
 	                                    <div class="todo-indicator bg-success"></div>
 	                                    <div class="widget-content p-0">
-	                                    	 <div class="widget-content-left mr-2">	                                    	 	
-	                                    	 	<input type="text" name="target1" class="form-control" placeholder="Enter Your First Target*" required />
+	                                    	 <div class="widget-content-left mr-2">
+	                                    	 	<input type="text" id="target1" name="target1" class="form-control" placeholder="Enter Your First Target*" required maxlength="40" onkeyup="textCounter(this,'counter1',40);" />
+	                                    	 	<input disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="40" id="counter1"> characters left<br/>
 	                                    	 	Category
 	                                    	 	<select name="category1" class="form-control">
 	                                    	 		<option value="Goal" >Goal</option>	                                    	 
@@ -75,7 +76,8 @@
 	                                    <div class="todo-indicator bg-success"></div>
 	                                    <div class="widget-content p-0">
 	                                    	 <div class="widget-content-left mr-2">	                                    	 	
-	                                    	 	<input type="text" name="target2" class="form-control" placeholder="Enter Your Second Target" />
+	                                    	 	<input type="text" name="target2" class="form-control" placeholder="Enter Your Second Target" maxlength="40" onkeyup="textCounter(this,'counter2',40);"/>
+	                                    	 	<input disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="40" id="counter2"> characters left<br/>
 	                                    	 	Category
 	                                    	 	<select name="category2" class="form-control">
 	                                    	 		<option value="Goal" >Goal</option>	                                    	 
@@ -92,7 +94,8 @@
 	                                    <div class="todo-indicator bg-success"></div>
 	                                    <div class="widget-content p-0">
 	                                    	 <div class="widget-content-left mr-2">	                                    	 	
-	                                    	 	<input type="text" name="target3" class="form-control" placeholder="Enter Your Third Target" />
+	                                    	 	<input type="text" name="target3" class="form-control" placeholder="Enter Your Third Target" maxlength="40" onkeyup="textCounter(this,'counter3',40);"/>
+	                                    	 	<input disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="40" id="counter3"> characters left<br/>
 	                                    	 	Category
 	                                    	 	<select name="category3" class="form-control">
 	                                    	 		<option value="Goal" >Goal</option>	                                    	 
@@ -109,7 +112,8 @@
 	                                    <div class="todo-indicator bg-success"></div>
 	                                    <div class="widget-content p-0">
 	                                    	 <div class="widget-content-left mr-2">	                                    	 	
-	                                    	 	<input type="text" name="target4" class="form-control" placeholder="Enter Your Forth Target" />
+	                                    	 	<input type="text" name="target4" class="form-control" placeholder="Enter Your Forth Target" maxlength="40" onkeyup="textCounter(this,'counter4',40);"/>
+	                                    	 	<input disabled  onfocus="this.blur();" tabindex="999" maxlength="3" size="3" value="40" id="counter4"> characters left<br/>
 	                                    	 	Category
 	                                    	 	<select name="category4" class="form-control">
 	                                    	 		<option value="Goal" >Goal</option>	                                    	 
@@ -144,5 +148,17 @@
 </div>
 <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script>
+function textCounter(field,field2,maxlimit)
+{
+ var countfield = document.getElementById(field2);
+ if ( field.value.length > maxlimit ) {
+  field.value = field.value.substring( 0, maxlimit );
+  return false;
+ } else {
+  countfield.value = maxlimit - field.value.length;
+ }
+}
+</script>
 </body>
 </html>
